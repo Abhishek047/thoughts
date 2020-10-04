@@ -203,6 +203,9 @@ h1{
     align-items: center;
     /* background-color: var(--primary-text); */
 }
+.card p{
+    padding: 0 35px 0 ;
+}
 .card img{
     width: 250px;
     height: 180px;
