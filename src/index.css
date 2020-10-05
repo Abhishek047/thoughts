@@ -183,7 +183,7 @@ h1{
     display: grid;
     margin: 50px auto;
     width: 90%;
-    grid-template-columns: repeat(auto-fit, 360px);
+    grid-template-columns: repeat(auto-fit, minmax(250px ,360px));
     grid-gap: 50px;
     justify-content: center;
     align-items: center;
@@ -256,6 +256,11 @@ h1{
     }
     .dailog img{
     max-width: 80%;
+    }
+
+    .card img{
+        width: 80%;
+        height: 50%;
     }
 }
 
