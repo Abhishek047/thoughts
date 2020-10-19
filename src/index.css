@@ -229,8 +229,8 @@ h1{
     background: rgba(0,0,0,0.5);
   }
   .dailog{
-      margin: 50px auto;
-      width: fit-content;
+      margin: 10px auto;
+      width: min-content;
       height: fit-content;
       z-index: 2;
       display: flex;
@@ -241,10 +241,31 @@ h1{
       justify-content: center; 
       background-color: #eaeaea;
 }
+.translateBox{
+    display: flex;
+    flex-flow: row;
+    align-self: flex-start;
+    margin:  10px 20px;
+}
+.translateBox label{
+    font-weight: 600;
+    padding: 5px;
+}
+.translateBox select{
+    margin: 0px 20px;
+    padding: 3px 10px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px 2px rgba(1, 1, 1, 0.25);
+    border-radius: 5px;
+}
+.translateBox select option{
+    border: none;
+}
 .dailog img{
-    width: auto;
+    width: min(550px,54vw);
     height: auto;
-    max-width: 650px;
     margin: 20px;
     box-shadow: 6px 6px 10px rgba(1, 1, 1, 0.25);
 }

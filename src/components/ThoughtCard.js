@@ -14,7 +14,11 @@ function ThoughtCard( {thought} ) {
             transition={{ delay:.5 }}
             className="card" >
                 <img src={thought.url} alt={thought.url} />
-                <p>{thought.text}</p>
+                <p>
+                    {
+                    (thought.text.length > 25) ? thought.text.substring(0,25) : thought.text 
+                    }...
+                    </p>
                 <button className="btn card-btn" onClick={()=> setOpen(!open)}>Show</button>
                 {open && <Dialog text={thought.text} url={thought.url} setOpen={setOpen} />}
             </motion.div>
